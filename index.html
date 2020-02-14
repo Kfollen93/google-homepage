@@ -11,6 +11,7 @@ h1
 
 .wrapper
 {
+    
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -26,6 +27,7 @@ h1
     background: transparent;
     position: relative;
     left: 55px;
+    border-radius: 3%;
 }
 
 
@@ -52,6 +54,7 @@ h1
 
 ul
 {
+    opacity: 0.75;   
     text-align: center;
     position: relative;
     bottom: 160px;
@@ -75,18 +78,18 @@ li.b
     margin: 0 10px;
     float: right;
     position: relative;
-    left: 1px;
+    left: -105px;
     top: 5px;
     
 }
 
-.c button
+.c
 {
     margin: 0 10px;
     float: right;
     position: relative;
-    left: 1px;
-    top: -1px;
+    left: 120px;
+    top: -162px;
     background-color: #4285f4;
     width: 66px;
     height: 30px;
@@ -112,6 +115,8 @@ li.b
 
 ulfooter
 {
+    
+    opacity: 0.75;
     position: fixed;
     bottom: 0px;
     color: #000;
@@ -140,7 +145,7 @@ li.d2
 }
 li.d3
 {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 160px 0px 0px;
     margin: 0 10px;
     float: left;
     position: fixed;
@@ -154,7 +159,7 @@ li.e1
     margin: 0 10px;
     float: right;
     position: fixed;
-    left: 350px;
+    right: 60px;
     bottom: 10px;
 }
 
@@ -164,7 +169,7 @@ li.e2
     margin: 0 10px;
     float: right;
     position: fixed;
-    left: 298px;
+    right: 120px;
     bottom: 10px;
 }
 
@@ -174,9 +179,37 @@ li.e3
     margin: 0 10px;
     float: right;
     position: fixed;
-    left: 238px;
+    right: 168px;
     bottom: 10px;
 }
+
+.containertwo
+{
+    width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+a
+{
+    color: #000;
+}
+
+.product
+{
+    width: 960px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 10px;
+    float: right;
+    position: fixed;
+    right: 78px;
+    top: 20px;
+    
+}
+
 
 
 
@@ -190,41 +223,45 @@ li.e3
 <h1><img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></h1>
 
     <div class="container">
-        <input type="text" class="input" placeholder="What are you looking for?">
+        <input type="text" class="input" placeholder="">
         <input type="button" class="searchbutton" value="Google Search">
         <input type="button" class="luckybutton" value="I'm Feeling Lucky">
-    
+       
 </div></div>
     
 
 <header>
     <ul style="list-style-type:none">
-        <li class="a"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
-        <li class="a"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a></li>
-        <li class="c"> <button onclick="window.location.href = 'https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin';">Sign In</input type="button"></li>
-        <li class="b"><a href="https://about.google/intl/en/products/?tab=wh"> Products</a></li>
-        <li class="b"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"> Images </a></li>
-        <li class="b"><a href="https://www.google.com/gmail/about/#"> Gmail </a></li>
+        <li class="a"><a style="text-decoration: none" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> About </a></li>
+        <li class="a"><a style="text-decoration: none" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"> Store </a></li>
+        <li class="b"><a style="text-decoration: none" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl"> Images </a></li>
+        <li class="b"><a style="text-decoration: none" href="https://www.google.com/gmail/about/#"> Gmail </a></li>
         
     </ul>
+    <button class="c" onclick="window.location.href = 'https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin';">Sign In</input type="button">
     </div>
+
+    
 
 </header>
 
+<div class="containertwo">
 <footer>
     <ulfooter style="list-style-type:none">
-        <li class="d1"><a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"> Advertising </a></li>
-        <li class="d2"><a href="https://www.google.com/intl/en_us/services/ce/?subid=us-en-et-g-aw-a-g4sb_test_2c!o2&gmbsrc=us-en_US-et-z-z-gmb-s-z-r~sb-g4sb_test_2c-u&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1&utm_expid=.1tzV7EbIReimh-7EIKk4yw.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F#?modal_active=none"> Business </a></li>
-        <li class="d3"><a href="https://www.google.com/search/howsearchworks/?fg=1"> How Search Works</a></li>
-        <li class="e1"><a href="https://www.google.com/preferences?hl=en"> Settings </a></li>
-        <li class="e2"><a href="https://policies.google.com/terms?fg=1"> Terms </a></li>
-        <li class="e3"><a href="https://policies.google.com/privacy?fg=1"> Privacy </a></li>
-        
+        <li class="d1"><a style="text-decoration: none" href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"> Advertising </a></li>
+        <li class="d2"><a style="text-decoration: none" href="https://www.google.com/intl/en_us/services/ce/?subid=us-en-et-g-aw-a-g4sb_test_2c!o2&gmbsrc=us-en_US-et-z-z-gmb-s-z-r~sb-g4sb_test_2c-u&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1&utm_expid=.1tzV7EbIReimh-7EIKk4yw.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F#?modal_active=none"> Business </a></li>
+        <li class="d3"><a style="text-decoration: none" href="https://www.google.com/search/howsearchworks/?fg=1"> How Search Works</a></li>
+        <li class="e1"><a style="text-decoration: none" href="https://www.google.com/preferences?hl=en"> Settings </a></li>
+        <li class="e2"><a style="text-decoration: none" href="https://policies.google.com/terms?fg=1"> Terms </a></li>
+        <li class="e3"><a style="text-decoration: none" href="https://policies.google.com/privacy?fg=1"> Privacy </a></li>
+    </div>
+
     </div>
 
 
 </footer>
 
+<div class="product"> <a href="https://about.google/intl/en/products/?tab=wh"><img src="https://i.ibb.co/9h1pbXQ/Webp-net-resizeimage.png" alt="Webp-net-resizeimage" border="0"></a></div>
 
 
 
